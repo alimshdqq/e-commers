@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+    <head>
+        <title>LQ World - Flash Sale Official Store</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Bootstrap CSS v5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </head>
+    <body class="bg-light">
+
+        <!-- 1. NAVBAR -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+                <div class="container">
+                    <a href="#" class="navbar-brand fw-bold fs-4 text-primary d-flex align-items-center gap-2">
+                       <i class="bi bi-bag-fill text-primary"></i>
+                       LQ World
+                    </a>
+                    <button 
+                        class="navbar-toggler border-0" 
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarToko"
+                        aria-controls="navbarToko"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbarToko">
+                        <ul class="navbar-nav mb-2 mx-auto mb-lg-0 gap-lg-3 text-center">
+                            <li class="nav-item"><a href="#" class="nav-link fw-semibold active">Home</a></li>
+                            <li class="nav-item"><a href="#product" class="nav-link fw-semibold">Product</a></li>
+                            <li class="nav-item"><a href="#product" class="nav-link fw-semibold">Category</a></li>
+                            <li class="nav-item"><a href="#faq" class="nav-link fw-semibold">FAQ & About</a></li>
+                        </ul>
+                        <div class="d-flex gap-2 justify-content-center mt-3 mt-lg-0">
+                            <button class="btn btn-light border position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                <i class="bi bi-cart-fill text-dark"></i>
+                                <span id="cartBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                </span>
+                            </button>
+                            <button class="btn btn-light border" type="button" data-bs-toggle="modal" data-bs-target="#modalCari">
+                                <i class="bi bi-search text-dark"></i>
+                            </button>
+                            <button class="btn btn-primary fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                                <i class="bi bi-person-circle me-1"></i> Login
+                            </button>
+                            <button class="btn btn-outline-primary fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#modalRegister">
+                                <i class="bi bi-person-add me-1"></i> Register
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 2. CAROUSEL BANNER (FLASH SALE + LOGO LQ WORLD DI POJOK BAWAH) -->
+        <div id="carouselExampleIndicators" class="carousel slide shadow-sm" data-bs-interval="3000" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1: Flash Sale Mega Promo -->
+                <div class="carousel-item active position-relative">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=1400&auto=format&fit=crop" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Flash Sale 1">
+                    <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-4 rounded-4 mb-4">
+                        <span class="badge bg-danger fs-6 mb-2">FLASH SALE 10.10</span>
+                        <h2 class="fw-bold text-white">DISKON HINGGA 70% HARI INI</h2>
+                        <p class="mb-0">Dapatkan berbagai produk pilihan dengan penawaran termurah di LQ World.</p>
+                    </div>
+                    <!-- Logo LQ World di Pojok Kanan Bawah -->
+                    <div class="position-absolute bottom-0 end-0 m-3 m-md-4 bg-white text-primary fw-bold px-3 py-2 rounded-pill shadow-lg d-flex align-items-center gap-2 border border-primary z-3">
+                        <i class="bi bi-bag-fill fs-5"></i>
+                        <span>LQ World</span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Super Promo Gadget -->
+                <div class="carousel-item position-relative">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1400&auto=format&fit=crop" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Flash Sale 2">
+                    <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-4 rounded-4 mb-4">
+                        <span class="badge bg-warning text-dark fs-6 mb-2">LIMITED TIME OFFER</span>
+                        <h2 class="fw-bold text-white">PROMO ELEKTRONIK & GADGET</h2>
+                        <p class="mb-0">Belanja perangkat elektronik original dan bergaransi resmi.</p>
+                    </div>
+                    <!-- Logo LQ World di Pojok Kanan Bawah -->
+                    <div class="position-absolute bottom-0 end-0 m-3 m-md-4 bg-white text-primary fw-bold px-3 py-2 rounded-pill shadow-lg d-flex align-items-center gap-2 border border-primary z-3">
+                        <i class="bi bi-bag-fill fs-5"></i>
+                        <span>LQ World</span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Fashion Sale -->
+                <div class="carousel-item position-relative">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=1400&auto=format&fit=crop" class="d-block w-100 object-fit-cover" style="height: 450px;" alt="Flash Sale 3">
+                    <div class="carousel-caption d-none d-md-block text-start bg-dark bg-opacity-50 p-4 rounded-4 mb-4">
+                        <span class="badge bg-success fs-6 mb-2">SPECIAL DEALS</span>
+                        <h2 class="fw-bold text-white">KOLEKSI FASHION TERBARU</h2>
+                        <p class="mb-0">Tampil keren setiap hari dengan produk pakaian kualitas terbaik.</p>
+                    </div>
+                    <!-- Logo LQ World di Pojok Kanan Bawah -->
+                    <div class="position-absolute bottom-0 end-0 m-3 m-md-4 bg-white text-primary fw-bold px-3 py-2 rounded-pill shadow-lg d-flex align-items-center gap-2 border border-primary z-3">
+                        <i class="bi bi-bag-fill fs-5"></i>
+                        <span>LQ World</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- 3. HERO CTA -->
+        <section class="py-5 bg-white border-bottom" id="hero">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6 text-center text-lg-start">
+                        <span class="badge text-bg-primary px-3 py-2 rounded-pill mb-3">Selamat Datang di LQ World</span>
+                        <h1 class="fw-bold display-4 mb-3">Belanja Mudah <span class="text-primary">Harga Murah</span></h1>
+                        <p class="text-secondary lead mb-4">Temukan berbagai produk impian Anda hanya di LQ World dengan harga terbaik dan garansi resmi.</p>
+                        <div class="d-flex gap-2 justify-content-center justify-content-lg-start">
+                            <button class="btn btn-primary btn-lg shadow-sm fw-bold" type="button" data-bs-toggle="offcanvas" data-bs-target="#canvasKeranjang">
+                                Keranjang <i class="bi bi-cart4 ms-1"></i>
+                            </button>
+                            <a href="#product" class="btn btn-outline-secondary btn-lg fw-bold">
+                                Lihat Produk <i class="bi bi-bag-fill ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 text-center">
+                        <img src="https://i.pinimg.com/736x/cc/3a/63/cc3a6338d439ae7fc98c4cd4cc4b36ca.jpg" alt="Hero LQ World" class="img-fluid rounded-4 shadow object-fit-cover" style="max-width: 420px; width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PRODUCT SECTION (6 PRODUK) -->
+        <section id="product" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge text-bg-primary px-3 py-2 rounded-pill mb-2">Produk Unggulan</span>
+                    <h2 class="fw-bold">Ayo Pilih Produk Kesukaanmu</h2>
+                    <p class="text-secondary">Temukan berbagai barang impian berkualitas tinggi dengan penawaran menarik</p>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    
+                    <!-- Produk 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://www.jaldayat.com/wp-content/uploads/2024/01/Kedai-Perabot-Terpakai-Furniture-Hunter-Kedai-Perabot-Murah-Johor-Bahru.jpg" class="card-img-top object-fit-cover" style="height: 220px;" alt="Furnitur Rumah">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-info text-dark w-auto me-auto mb-2">Furnitur</span>
+                                <h5 class="card-title fw-bold">Furnitur Rumah Tangga</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Berbagai macam furnitur rumah tangga yang nyaman, elegan, dan tahan lama.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 2.500.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk1">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://down-id.img.susercontent.com/file/id-11134201-23020-4x1n46oj5rnv5b" class="card-img-top object-fit-cover" style="height: 220px;" alt="Brand Baju">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-warning text-dark w-auto me-auto mb-2">Pakaian</span>
+                                <h5 class="card-title fw-bold">Brand Baju Kasual</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Berbagai macam brand pakaian ternama dengan bahan dingin dan nyaman.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 120.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk2">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/19/344a6c51-ee96-4531-b336-6b1068c7a3b0.jpg" class="card-img-top object-fit-cover" style="height: 220px;" alt="Kebutuhan Dapur">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-success text-white w-auto me-auto mb-2">Dapur</span>
+                                <h5 class="card-title fw-bold">Paket Kebutuhan Dapur</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Berbagai bahan-bahan kebutuhan dapur hemat dan beberapa bahan pangan pokok.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 50.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk3">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" style="height: 220px;" alt="Kamera Retro">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-danger text-white w-auto me-auto mb-2">Elektronik</span>
+                                <h5 class="card-title fw-bold">Kamera Instan Vintage</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Kamera foto instan dengan desain klasik, hasil foto tajam dan estetik.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 850.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk4">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 5 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" style="height: 220px;" alt="Headphone Wireless">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-danger text-white w-auto me-auto mb-2">Elektronik</span>
+                                <h5 class="card-title fw-bold">Headphone Wireless Bass</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Headphone Bluetooth dengan suara ekstra bass, daya tahan baterai hingga 30 jam.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 450.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk5">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 6 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" class="card-img-top object-fit-cover" style="height: 220px;" alt="Sepatu Sport">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge bg-primary text-white w-auto me-auto mb-2">Fashion</span>
+                                <h5 class="card-title fw-bold">Sepatu Olahraga Sporty</h5>
+                                <p class="card-text text-secondary small flex-grow-1">Sepatu lari yang ringan, fleksibel, dan sangat nyaman dipakai beraktivitas seharian.</p>
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <span class="fw-bold text-primary fs-5">Rp 350.000</span>
+                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduk6">
+                                        <i class="bi bi-eye me-1"></i> Detail
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. MODAL DETAIL PRODUK -->
+        <!-- Modal Produk 1 -->
+        <div id="modalProduk1" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Furnitur Rumah Tangga</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://www.jaldayat.com/wp-content/uploads/2024/01/Kedai-Perabot-Terpakai-Furniture-Hunter-Kedai-Perabot-Murah-Johor-Bahru.jpg" alt="Furnitur" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Paket jualan ini sangat bernilai karena bersifat komplit dan fungsional. Pembeli tidak hanya mendapatkan sofa utama, tetapi sudah termasuk meja kaca minimalis, dua buah stool/puff ekstra, hingga bantal dekoratifnya. Ini menjadi daya tarik bagi konsumen yang ingin mengisi rumah dengan cepat tanpa repot membeli terpisah.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Fitur Utama:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Bahan kayu jati pilihan tahan rayap</li>
+                                <li>Busa sofa empuk berkualitas tinggi</li>
+                                <li>Desain minimalis modern cocok untuk ruang tamu</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 2.500.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Furnitur Rumah Tangga', 2500000, 'https://www.jaldayat.com/wp-content/uploads/2024/01/Kedai-Perabot-Terpakai-Furniture-Hunter-Kedai-Perabot-Murah-Johor-Bahru.jpg')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk 2 -->
+        <div id="modalProduk2" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Brand Baju Kasual</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134201-23020-4x1n46oj5rnv5b" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;" alt="Baju">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Koleksi ini menghadirkan merek-merek pakaian kasual dan olahraga internasional yang diminati di pasar thrifting, seperti Adidas, Champion, Fila, Arena, Puma, serta kaus bertema olahraga. Kain adem dan menyerap keringat dengan baik.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Fitur Utama:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Bahan 100% Cotton Combed 30s adem</li>
+                                <li>Jahitan rantai standar distro yang kuat</li>
+                                <li>Tersedia berbagai pilihan ukuran (S, M, L, XL, XXL)</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 120.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Brand Baju Kasual', 120000, 'https://down-id.img.susercontent.com/file/id-11134201-23020-4x1n46oj5rnv5b')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk 3 -->
+        <div id="modalProduk3" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Paket Kebutuhan Dapur</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/19/344a6c51-ee96-4531-b336-6b1068c7a3b0.jpg" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;" alt="Dapur">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Produk ini menggabungkan berbagai macam kebutuhan dapur ke dalam satu paket. Strategi bundling seperti ini sangat memikat pembeli karena memberikan kesan lebih murah, praktis, dan menghemat biaya ongkos kirim dibanding membeli eceran secara terpisah.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Isi Paket Bundling:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Minyak Goreng Pouch 1 Liter</li>
+                                <li>Gula Pasir Kristal 500g</li>
+                                <li>Bumbu Dapur Lengkap & Garam Halus</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 50.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Paket Kebutuhan Dapur', 50000, 'https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/19/344a6c51-ee96-4531-b336-6b1068c7a3b0.jpg')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk 4 -->
+        <div id="modalProduk4" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Kamera Instan Vintage</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;" alt="Kamera">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Kamera foto instan gaya klasik retro, cocok untuk mengabadikan momen istimewa secara fisik dengan warna foto cetak instan yang memukau. Sangat mudah digunakan bagi pemula maupun penggemar fotografi analog.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Spesifikasi Utama:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Fitur Auto Exposure untuk pencahayaan optimal</li>
+                                <li>Lensa Selfie Mode terintegrasi</li>
+                                <li>Menggunakan kertas film instan standar</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 850.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Kamera Instan Vintage', 850000, 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=800&auto=format&fit=crop')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk 5 -->
+        <div id="modalProduk5" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Headphone Wireless Bass</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;" alt="Headphone">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Headphone Bluetooth stereo dengan perlindungan bantalan telinga yang empuk, mic terintegrasi, dan bass mendalam untuk mendengarkan musik seharian tanpa membuat telinga lelah.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Spesifikasi Utama:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Konektivitas Bluetooth 5.3 jangkauan 10m</li>
+                                <li>Daya tahan baterai hingga 30 jam pemakaian</li>
+                                <li>Mikrofon HD built-in untuk panggilan telepon jernih</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 450.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Headphone Wireless Bass', 450000, 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800&auto=format&fit=crop')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Produk 6 -->
+        <div id="modalProduk6" class="modal fade" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title fw-bold">Sepatu Olahraga Sporty</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop" class="img-fluid rounded-3 mb-3 object-fit-cover w-100" style="max-height: 250px;" alt="Sepatu">
+                        <h5 class="fw-bold">Tentang Produk</h5>
+                        <p class="text-secondary small">Sepatu lari kasual ringan dengan desain modern yang memikat, fleksibel, serta sangat kokoh digunakan di berbagai permukaan jalan. Melindungi kaki dari cedera saat berolahraga.</p>
+                        <div class="bg-light p-3 rounded-3 mb-3">
+                            <h6 class="fw-bold mb-2">Spesifikasi Utama:</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li>Sol karet anti-selip (Anti-Slip Rubber)</li>
+                                <li>Bahan mesh breathable tidak panas</li>
+                                <li>Insole empuk kenyamanan ekstra</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mt-3">
+                            <span class="badge bg-warning text-dark fs-6 px-3 py-2">Harga = Rp 350.000</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button class="btn btn-outline-danger fw-bold" data-bs-dismiss="modal">Tutup</button>
+                        <button class="btn btn-success fw-bold" onclick="tambahItemKeranjang('Sepatu Olahraga Sporty', 350000, 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop')" data-bs-dismiss="modal">
+                            <i class="bi bi-cart-plus me-1"></i> Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Search -->
+        <div class="modal fade" id="modalCari" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top">
+                <div class="modal-content border-0 shadow rounded-4">
+                    <div class="modal-body p-3">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-0 fs-5"><i class="bi bi-search"></i></span>
+                            <input type="text" class="form-control border-0 shadow-none fs-5" placeholder="Ketik kata kunci pencarian...">
+                            <button class="btn btn-primary fw-bold rounded-3" data-bs-dismiss="modal">Cari</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Login (Simulasi) -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4">
+                    <div class="modal-header border-0 pb-0">
+                        <h5 class="modal-title fw-bold">Login Simulasi</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form onsubmit="simulasiLogin(event)">
+                            <div class="mb-3">
+                                <label class="form-label text-secondary small fw-bold">Email / Username</label>
+                                <input type="text" class="form-control" placeholder="user@lqworld.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-secondary small fw-bold">Password</label>
+                                <input type="password" class="form-control" placeholder="******" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 fw-bold py-2 mt-2">Masuk Sekarang</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Register (Simulasi) -->
+        <div class="modal fade" id="modalRegister" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content border-0 shadow-lg rounded-4">
+                    <div class="modal-header border-0 pb-0">
+                        <h5 class="modal-title fw-bold">Daftar Akun Baru</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <form onsubmit="simulasiLogin(event)">
+                            <div class="mb-3">
+                                <label class="form-label text-secondary small fw-bold">Nama Lengkap</label>
+                                <input type="text" class="form-control" placeholder="Nama Anda" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-secondary small fw-bold">Email</label>
+                                <input type="email" class="form-control" placeholder="nama@email.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-secondary small fw-bold">Password</label>
+                                <input type="password" class="form-control" placeholder="******" required>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary w-100 fw-bold py-2 mt-2">Daftar Akun</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. ACCORDION / FAQ -->
+        <section id="faq" class="py-5 bg-white border-top">
+            <div class="container">
+                <div class="text-center mb-4">
+                    <span class="badge text-bg-primary px-3 py-2 rounded-pill mb-2">FAQ</span>
+                    <h2 class="fw-bold">Frequently Asked Questions</h2>
+                    <p class="text-secondary">Temukan Jawaban Dari Pertanyaan Seputar LQ World</p>
+                </div>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion shadow-sm rounded-3 overflow-hidden" id="accordionLQWorld">
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqsatu">
+                                        Apakah produk yang dijual di sini barang inter ?
+                                    </button>
+                                </h2>
+                                <div id="faqsatu" class="accordion-collapse collapse" data-bs-parent="#accordionLQWorld">
+                                    <div class="accordion-body text-secondary">
+                                        Tidak, semua produk yang dijual di sini resmi dan sudah melalui proses pemeriksaan Bea Cukai.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 border-bottom">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqdua">
+                                        Apakah produk yang dijual di sini asli ?
+                                    </button>
+                                </h2>
+                                <div id="faqdua" class="accordion-collapse collapse" data-bs-parent="#accordionLQWorld">
+                                    <div class="accordion-body text-secondary">
+                                        Tentu, semua produk yang dijual di LQ World 100% jaminan asli dan bergaransi resmi.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faqtiga">
+                                        Apakah produk yang sudah dipesan bisa diretur ?
+                                    </button>
+                                </h2>
+                                <div id="faqtiga" class="accordion-collapse collapse" data-bs-parent="#accordionLQWorld">
+                                    <div class="accordion-body text-secondary">
+                                        Tentu, semua produk yang dijual di sini dapat diretur maksimal 7 hari setelah barang diterima dengan melampirkan video unboxing.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-dark text-white py-4 mt-auto">
+            <div class="container text-center text-md-start">
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold text-primary mb-1"><i class="bi bi-bag-fill"></i> LQ World Official Store</h5>
+                        <small class="text-secondary">Solusi belanja hemat dan terpercaya di Indonesia.</small>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <small class="text-secondary">&copy; 2026 LQ World. Simulasi E-Commerce Bootstrap 5.</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 7. OFFCANVAS KERANJANG -->
+        <div class="offcanvas offcanvas-end border-0 shadow-lg" id="canvasKeranjang" tabindex="-1">
+            <div class="offcanvas-header bg-light border-bottom">
+                <h5 class="offcanvas-title fw-bold text-primary" id="offcanvasLabel">
+                    <i class="bi bi-cart3 me-1"></i> Shopping Cart
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column">
+
+                <!-- List Produk Keranjang Simulasi -->
+                <div id="keranjangList" class="d-flex flex-column gap-3 mb-auto">
+                    
+                    <!-- Item 1 -->
+                    <div class="cart-item d-flex gap-3 align-items-center p-2 rounded bg-light border" data-harga="2500000">
+                        <img src="https://www.jaldayat.com/wp-content/uploads/2024/01/Kedai-Perabot-Terpakai-Furniture-Hunter-Kedai-Perabot-Murah-Johor-Bahru.jpg" class="rounded object-fit-cover" width="65" height="65" alt="Furnitur">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold small">Furnitur Rumah tangga</h6>
+                            <small class="text-primary fw-bold d-block mb-1">Rp 2.500.000</small>
+                            <div class="d-flex gap-2 align-items-center">
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, -1)">-</button>
+                                <span class="jumlah-item fw-bold small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, 1)">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-outline-danger" onclick="hapusItem(this)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item d-flex gap-3 align-items-center p-2 rounded bg-light border" data-harga="120000">
+                        <img src="https://down-id.img.susercontent.com/file/id-11134201-23020-4x1n46oj5rnv5b" class="rounded object-fit-cover" width="65" height="65" alt="Baju">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold small">Brand Baju Kasual</h6>
+                            <small class="text-primary fw-bold d-block mb-1">Rp 120.000</small>
+                            <div class="d-flex gap-2 align-items-center">
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, -1)">-</button>
+                                <span class="jumlah-item fw-bold small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, 1)">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-outline-danger" onclick="hapusItem(this)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="cart-item d-flex gap-3 align-items-center p-2 rounded bg-light border" data-harga="50000">
+                        <img src="https://images.tokopedia.net/img/cache/700/VqbcmM/2022/12/19/344a6c51-ee96-4531-b336-6b1068c7a3b0.jpg" class="rounded object-fit-cover" width="65" height="65" alt="Dapur">
+                        <div class="flex-grow-1">
+                            <h6 class="mb-0 fw-bold small">Kebutuhan Dapur</h6>
+                            <small class="text-primary fw-bold d-block mb-1">Rp 50.000</small>
+                            <div class="d-flex gap-2 align-items-center">
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, -1)">-</button>
+                                <span class="jumlah-item fw-bold small">1</span>
+                                <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, 1)">+</button>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-outline-danger" onclick="hapusItem(this)">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Ringkasan Pembayaran -->
+                <div class="border-top pt-3 mt-3">
+                    <div class="d-flex justify-content-between text-secondary mb-1">
+                        <span>Subtotal</span>
+                        <strong id="textSubtotal">Rp 2.670.000</strong>
+                    </div>
+                    <div class="d-flex justify-content-between text-secondary mb-1">
+                        <span>Ongkir</span>
+                        <strong id="textOngkir">Rp 20.000</strong>
+                    </div>
+                    <div class="d-flex justify-content-between fs-5 text-dark mb-3">
+                        <span class="fw-bold">Total</span>
+                        <strong class="text-primary" id="textTotal">Rp 2.690.000</strong>
+                    </div>
+                    <button class="btn btn-success w-100 btn-lg fw-bold shadow-sm" onclick="simulasiCheckout()">
+                        <i class="bi bi-credit-card me-1"></i> Checkout
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Toast Notifikasi -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="toastSimulasi" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body fw-bold" id="toastText">
+                        <i class="bi bi-check-circle me-1"></i> Produk berhasil ditambahkan!
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Javascript Simulasi Interaktif -->
+        <script>
+            let totalSubtotal = 2670000;
+            const ongkir = 20000;
+
+            function formatRupiah(angka) {
+                return 'Rp ' + angka.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+            }
+
+            function hitungTotal() {
+                let items = document.querySelectorAll('.cart-item');
+                let newSubtotal = 0;
+                items.forEach(item => {
+                    let harga = parseInt(item.getAttribute('data-harga'));
+                    let qty = parseInt(item.querySelector('.jumlah-item').innerText);
+                    newSubtotal += harga * qty;
+                });
+
+                document.getElementById('textSubtotal').innerText = formatRupiah(newSubtotal);
+                document.getElementById('textOngkir').innerText = items.length > 0 ? formatRupiah(ongkir) : 'Rp 0';
+                let totalAkhir = items.length > 0 ? newSubtotal + ongkir : 0;
+                document.getElementById('textTotal').innerText = formatRupiah(totalAkhir);
+                document.getElementById('cartBadge').innerText = items.length;
+            }
+
+            function ubahJumlah(btn, delta) {
+                let span = btn.parentElement.querySelector('.jumlah-item');
+                let count = parseInt(span.innerText) + delta;
+                if (count > 0) {
+                    span.innerText = count;
+                    hitungTotal();
+                }
+            }
+
+            function hapusItem(btn) {
+                let item = btn.closest('.cart-item');
+                item.remove();
+                hitungTotal();
+            }
+
+            function tambahItemKeranjang(nama, harga, img) {
+                let keranjang = document.getElementById('keranjangList');
+                let newItem = document.createElement('div');
+                newItem.className = 'cart-item d-flex gap-3 align-items-center p-2 rounded bg-light border';
+                newItem.setAttribute('data-harga', harga);
+                newItem.innerHTML = `
+                    <img src="${img}" class="rounded object-fit-cover" width="65" height="65" alt="${nama}">
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0 fw-bold small">${nama}</h6>
+                        <small class="text-primary fw-bold d-block mb-1">${formatRupiah(harga)}</small>
+                        <div class="d-flex gap-2 align-items-center">
+                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, -1)">-</button>
+                            <span class="jumlah-item fw-bold small">1</span>
+                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" onclick="ubahJumlah(this, 1)">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-sm btn-outline-danger" onclick="hapusItem(this)">
+                        <i class="bi bi-trash"></i>
+                    </button>
+                `;
+                keranjang.appendChild(newItem);
+                hitungTotal();
+
+                let toastEl = document.getElementById('toastSimulasi');
+                document.getElementById('toastText').innerHTML = `<i class="bi bi-check-circle me-1"></i> ${nama} berhasil ditambahkan!`;
+                let toast = new bootstrap.Toast(toastEl);
+                toast.show();
+            }
+
+            function simulasiCheckout() {
+                let items = document.querySelectorAll('.cart-item');
+                if(items.length === 0) {
+                    alert('Keranjang belanja Anda masih kosong!');
+                    return;
+                }
+                alert('Simulasi Checkout Berhasil! Terima kasih telah mencoba demo LQ World.');
+            }
+
+            function simulasiLogin(e) {
+                e.preventDefault();
+                alert('Login simulasi berhasil!');
+                let modalEl = document.querySelector('.modal.show');
+                if(modalEl) {
+                    let modal = bootstrap.Modal.getInstance(modalEl);
+                    modal.hide();
+                }
+            }
+        </script>
+    </body>
+</html>
